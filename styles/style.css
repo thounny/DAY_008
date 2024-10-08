@@ -1,7 +1,7 @@
 /* General Layout and Style */
 body {
   background-color: #111;
-  background: url("/giphygradient.webp") center / cover;
+  background: url("../assets/giphygradient.webp") center / cover;
   color: #f5e0c3;
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
@@ -17,7 +17,7 @@ body {
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: url(./helveticaneue.woff2);
+  src: url(../fonts/helveticaneue.woff2);
 }
 
 header {
