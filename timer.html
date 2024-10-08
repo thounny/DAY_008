@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wired Pomodoro</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Wired Timer</div>
+        <ul>
+          <li><a href="./index.html">Dashboard</a></li>
+          <li><a href="#">Timer</a></li>
+          <li>
+            <a href="https://github.com/thounny" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pomodoro-timer">
+        <h2>POMODORO TIMER</h2>
+        <div class="time-settings">
+          <p>
+            I aim to focus for
+            <button class="decrement" id="work-decrease">-</button>
+            <span id="work-duration">25</span> minutes
+            <button class="increment" id="work-increase">+</button>
+          </p>
+          <p>
+            Then, rest for
+            <button class="decrement" id="break-decrease">-</button>
+            <span id="break-duration">5</span> minutes
+            <button class="increment" id="break-increase">+</button>
+          </p>
+        </div>
+        <button id="start-session" class="minimal-btn">Start Session</button>
+      </section>
+
+      <section class="task-container">
+        <ul id="task-list"></ul>
+        <div class="task-input">
+          <input type="text" id="task-input" placeholder="Add a task" />
+          <button id="add-task" class="minimal-btn">→</button>
+        </div>
+      </section>
+
+      <div class="big-timer-display">
+        <div id="timer">
+          <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+      </div>
+
+      <div id="break-indicator" class="break-message" style="display: none">
+        Break Time! Relax for <span id="break-time-indicator"></span> minutes.
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

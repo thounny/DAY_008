@@ -1,0 +1,96 @@
+/* General Layout and Style */
+body {
+  background-color: #111;
+  background: url("/giphygradient.webp") center / cover;
+  color: #f5e0c3;
+  font-family: "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(./helveticaneue.woff2);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #f5e0c3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5e0c3;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: whitesmoke;
+}
+
+/* Main Content Spacing */
+main {
+  margin-top: 100px; /* Provide space below the fixed header */
+  width: 90%; /* Limit the width of the main content */
+  max-width: 1200px; /* Max width for larger screens */
+  text-align: center; /* Center align text */
+}
+
+/* Dashboard Overview */
+.dashboard-overview {
+  margin-bottom: 40px;
+}
+
+.dashboard-overview h2 {
+  font-size: 2.5rem; /* Increase font size for emphasis */
+}
+
+.minimal-btn {
+  background: none;
+  border: 2px solid #f5e0c3;
+  border-radius: 25px;
+  color: #f5e0c3;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.minimal-btn:hover {
+  background-color: #f5e0c3;
+  color: #111;
+}
